@@ -1,9 +1,9 @@
 <template>
   <Layout>
     <div class="layout">
-      <Nav :date.sync="theDate"/>
-<!--      <Nav :date="theDate" @update:date="updateDate"/>-->
-      <Content :the-date="theDate"/>
+      <Nav :date.sync="theDate" />
+      <!--      <Nav :date="theDate" @update:date="updateDate"/>-->
+      <Content :the-date="theDate" />
     </div>
   </Layout>
 </template>
@@ -11,12 +11,12 @@
 <script lang="ts">
 import Nav from '@/components/Detail/Nav.vue';
 import Content from '@/components/Detail/Content.vue';
-import {Component, Watch} from 'vue-property-decorator';
+import { Component, Watch } from 'vue-property-decorator';
 
 import Vue from 'vue';
 
 @Component({
-  components: {Content, Nav},
+  components: { Content, Nav },
 })
 export default class Detail extends Vue {
 
