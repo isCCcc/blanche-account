@@ -20,7 +20,7 @@ git commit -m 'update'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git main
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-#  git push -f git@github.com:isCCcc/blanche-account-website.git master:gh-pages
- git push -f git@gitee.com:meatball-c/blanche-account-website.git master:gh-pages
+  git push -f git@github.com:isCCcc/blanche-account-website.git master:gh-pages
+# git push -f git@gitee.com:meatball-c/blanche-account-website.git master:gh-pages
 
 cd -
