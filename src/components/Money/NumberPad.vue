@@ -72,10 +72,13 @@ export default class NumberPad extends Vue {
   }
 
   ok() {
-    this.$emit('update:amount', this.output);
-    this.$emit('submit', this.output);
-    this.output = '0';
-    // alert('记录成功')
+    if (this.output === '0') {
+      alert('请输入大于0的金额')
+    } else {
+      this.$emit('update:amount', this.output);
+      this.$emit('submit', this.output);
+      this.output = '0';
+    }
   }
 }
 </script>
